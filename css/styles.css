@@ -1,15 +1,49 @@
 header {
-color: #4D9078
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+color: #4D9078;
 }
 body{
-    background-color: #F7E8B7
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdb085;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdb085;
 }
 h1{
-    color: #4D9078
+    color: #4D9078;
 }
 p{
-   color:#8B4D4D
+   color:#8B4D4D;
 }
 nav li{
-    display: inline-block
+    display: inline-block;
 }
+.category-container{
+display: flex;
+flex-direction: column;
+}
+.category{
+margin: 10px;
+background-color: #4D9078;
+padding: 10px;
+}
+.category.sale{
+    background-color: red;
+}
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+    .category-container{
+        display: flex;
+        flex-direction: row;
+    }
+  }
