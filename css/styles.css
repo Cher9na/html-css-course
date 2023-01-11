@@ -3,42 +3,42 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-color: #4D9078;
+    color: #4D9078;
 }
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #bdb085;
 }
-main{
+main {
     display: grid;
     flex-direction: column;
     align-items: center;
     background-color: #bdb085;
 }
-h1{
+h1 {
     color: #4D9078;
 }
-p{
+p {
    color:#8B4D4D;
 }
-nav li{
+nav li {
     display: inline-block;
 }
-.category-container{
+.category-container {
 display: flex;
 flex-direction: column;
 }
-.category{
+.category {
 margin: 10px;
 background-color: #4D9078;
 padding: 10px;
 }
-.category.sale{
+.category.sale {
     background-color: red;
 }
-.row-clearance{
+.row-clearance {
 display: flex;
 flex-direction: column;
 }
@@ -46,7 +46,7 @@ details{
 font: 16px "open sans", Calibri, sans-serif;
 width: 620px;
 }
-details>summary{
+details>summary {
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
@@ -59,7 +59,7 @@ details>summary{
     cursor: pointer;
     list-style: none;
 }
-details>p{
+details>p {
     border-radius: 0 0 10px 10px;
     background-color: #ddd;
     padding: 2px 6px;
@@ -70,7 +70,7 @@ details>p{
     margin: .2rem;
     line-height: 6px;
 }
-.menu{
+.menu {
     border-radius: 0 0 10px 10px;
     background-color: #ddd;
     padding: 2px 6px;
