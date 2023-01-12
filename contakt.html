@@ -36,17 +36,32 @@ ___
             </details>
         </div>
         <main>
-        <div class="contack">
-            <h1>Contact</h1>
-        </div>
-        <div class="phone">
-            <h2>Phone number</h2>
-            <p>+47 12345678</p>
-        </div>
-        <div class="email">
-            <h2>Email</h2>
-            <p>nettshop@rainydays.net</p>
-        </div>
+            <h2>Contakt</h2>
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First name</label>
+                    <input type="text" id="firstname" placeholder="Your name">
+
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name">
+
+                    <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                    <input type="text" id="email" name="email" placeholder="mail@example.com">
+
+                    <label for="contry">Country</label>
+                    <select id="country" name="country">
+                        <option value="Skandinavia">Norway,Sweden, Danmark, Finland</option>
+                        <option value="europe">EU</option>
+                        <option value="Asia">Asia</option>
+                        <option value="US">US</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px;"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </main>
         <footer>
             <a href="aboutus.html" alt="aboutus">About</a>
