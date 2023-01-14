@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/payment.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>payment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./payment_files/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rainydays</h1>
+            <p>Pushing the comfort zone</p>
+        </header>
+        <div>
+            <details>
+                <summary>
+                    <pre class="burger-lines">___
+___
+___
+                    </pre>
+                </summary>
+                <div class="menu">
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/index.html" alt="home">Home</a></li>
+                        <li><a href="http://127.0.0.1:5500/men.html" alt="mens">Men</a></li>
+                        <li><a href="http://127.0.0.1:5500/women.html" alt="women">Women</a></li>
+                        <li><a href="http://127.0.0.1:5500/clearance.html" alt="clearance">Sale</a></li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+        <main>
+            <h2>Payment</h2>
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+                        <form action="http://127.0.0.1:5500/action_page.php">
+                            
+                        <div class="row">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+                                    <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+                                    <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                                    <input type="text" id="email" name="email" placeholder="mail@example.com">
+                                    <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                                    <input type="text" id="adr" name="address" placeholder="235 W. 17th Street">
+                                    <label for="city"><i class="fa fa-institution"></i>City</label>
+                                    <input type="text" id="city" name="city" placeholder="New York">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" placeholder="NY">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip">Zip</label>
+                                            <input type="text" id="zip" name="zip" placeholder="10001">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color: navy;"></i>
+                                    <i class="da da-cc-amex" style="color: blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                                    <i class="fa fa-cc-discover" style="color: orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Enter your name">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="111-222-333-444">
+                                
+                                <div class="row">
+                                    <div class="col-50">
+                                    <lable for="exp-date">Expiration Date</lable>
+                                    <input type="month" id="exp-date" name="exp-date">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="ex:352">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                            </label>
+                            <input type="submit" value="continue to checkout" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-25">
+                <div class="container">
+                    <h4>Cart
+                        <span class="price" style="color: black;">
+                            <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                        </span>
+                    </h4>
+                    <p><img src="./payment_files/Wbreaker.webp" alt="dark grey jacket">Gore-tex jacket<span class="price">$15</span></p>
+                    <p><a href="http://127.0.0.1:5500/payment.html#">Produkt 2</a><span class="price">$ 5</span></p>
+                    <p><a href="http://127.0.0.1:5500/payment.html#">Produkt 3</a><span class="price">$ 4</span></p>
+                    <p><a href="http://127.0.0.1:5500/payment.html#">Produkt 4</a><span class="price">$ 3</span></p>
+                    <hr>
+                    <p>Total<span class="price" style="color: black;"><b>$27</b></span></p>
+                </div>
+            </div>
+        </main>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="http://127.0.0.1:5500/payment.html" async="" defer=""></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
